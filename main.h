@@ -30,4 +30,7 @@ int print_percent();
 /* print int */
 int print_integer(va_list list);
 
+/* print binary */
+int print_binary(va_list list);
+
 #endif
