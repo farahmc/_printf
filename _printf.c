@@ -16,8 +16,9 @@ int _printf(const char *format, ...)
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_percent},
-		// {"b", print_binary},
+		{"b", print_binary},
 		{"d", print_integer},
+		// {"u", print_unsigned_integer},
 		// comment out below 3 lines to test the function of print_char only
 		// {"i", print_int},
 		{NULL, NULL},

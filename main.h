@@ -33,4 +33,10 @@ int print_integer(va_list list);
 /* print binary */
 int print_binary(va_list list);
 
+/* get the bytes length of the given number with given base */
+int bytes_len(unsigned int number, int base);
+
+/* print int */
+// int print_unsigned_integer(va_list list);
+
 #endif
