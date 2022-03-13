@@ -37,6 +37,28 @@ int print_str(va_list list)
 }
 
 /**
+  * print_str - print a string
+  * @list: list of arguments
+  * Return: return numbers of character printed
+  *
+  */
+int print_roi13(va_list list)
+{
+	int i = 0;
+	char *str;
+
+	str = va_arg(list, char *);
+	if (str == NULL || *str == '\0')
+		str = "(null)";
+	while (str[i] != '\0')
+	{
+		_putchar(str[i] + 13);
+		i++;
+	}
+	return (i);
+}
+
+/**
  * print_percent - print percent symbol
  *
  * Return: numbers of percent printed

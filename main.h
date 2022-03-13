@@ -36,6 +36,9 @@ int print_binary(va_list list);
 /* get the bytes length of the given number with given base */
 int bytes_len(unsigned int number, int base);
 
+/* print the roi13 string */
+int print_roi13(va_list list);
+
 /* print int */
 // int print_unsigned_integer(va_list list);
 
