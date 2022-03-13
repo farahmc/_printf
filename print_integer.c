@@ -70,6 +70,7 @@ void print_positive_number(int pn)
 int print_integer(va_list list)
 {
 	int n = va_arg(list, int);
+
 	if (n == 0)
 	{
 		_putchar('0');
@@ -83,5 +84,5 @@ int print_integer(va_list list)
 		_putchar('-');
 		print_positive_number(n);
 	}
-	return(number_length(n));
+	return (number_length(n));
 }

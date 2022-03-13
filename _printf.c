@@ -19,9 +19,11 @@ int _printf(const char *format, ...)
 		{"b", print_binary},
 		{"d", print_integer},
 		{"R", print_roi13},
-		// {"u", print_unsigned_integer},
-		// comment out below 3 lines to test the function of print_char only
-		// {"i", print_int},
+		/*
+		* {"u", print_unsigned_integer},
+		* comment out below 3 lines to test the function of print_char only
+		* {"i", print_int},
+		*/
 		{NULL, NULL},
 	};
 	if (format == NULL)

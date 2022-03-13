@@ -37,28 +37,6 @@ int print_str(va_list list)
 }
 
 /**
-  * print_str - print a string
-  * @list: list of arguments
-  * Return: return numbers of character printed
-  *
-  */
-int print_roi13(va_list list)
-{
-	int i = 0;
-	char *str;
-
-	str = va_arg(list, char *);
-	if (str == NULL || *str == '\0')
-		str = "(null)";
-	while (str[i] != '\0')
-	{
-		_putchar(str[i] + 13);
-		i++;
-	}
-	return (i);
-}
-
-/**
  * print_percent - print percent symbol
  *
  * Return: numbers of percent printed
@@ -125,41 +103,3 @@ int print_binary(va_list list)
 	free(str);
 	return (length);
 }
-
-/**
- * print_binary - print binary numbers
- * @list: list of arguments
- * Return: numbers of binary printed
- */
-// int print_unsigned_integer(va_list list)
-// {
-// 	unsigned int number;
-// 	int length, j;
-// 	int i = 0;
-// 	char *str;
-
-// 	number = va_arg(list, unsigned int);
-// 	if (number == 0)
-// 		return (_putchar('0'));
-// 	length = bytes_len(number, 10);
-// 	str = malloc(sizeof(char) * length + 1);
-// 	if (str == NULL)
-// 	{
-// 		return (-1);
-// 	}
-// 	while (number > 0)
-// 	{
-// 		printf("%u", number);
-// 		str[i] = number % 10;
-// 		printf("%c", str[i]);
-// 		number = number / 10;
-// 		i++;
-// 	}
-// 	str[i] = '\0';
-// 	for (j = length; j >= 0; j--)
-// 	{
-// 		_putchar(str[j]);
-// 	}
-// 	free(str);
-// 	return (length);
-// }
