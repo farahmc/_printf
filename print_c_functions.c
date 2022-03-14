@@ -84,7 +84,7 @@ int print_binary(va_list list)
 	str = malloc(sizeof(char) * length + 1);
 	if (str == NULL)
 	{
-		return (-1);
+		return (0);
 	}
 	while (number > 0)
 	{
