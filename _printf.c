@@ -44,9 +44,7 @@ int _printf(const char *format, ...)
 				j++;
 			}
 			if (symbol[j].spf == NULL)
-			{
 				count += _putchar(format[i]);
-			}
 		}
 	}
 	va_end(vlist);
