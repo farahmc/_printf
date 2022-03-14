@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
   * _printf - produce output according to a format
@@ -43,6 +42,10 @@ int _printf(const char *format, ...)
 				if (*(symbol[j].spf) == format[i])
 					count += symbol[j].func(vlist);
 				j++;
+			}
+			if (symbol[j].spf == NULL)
+			{
+				count += _putchar(format[i]);
 			}
 		}
 	}
