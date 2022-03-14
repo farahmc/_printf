@@ -17,6 +17,7 @@ int _printf(const char *format, ...)
 		{"%", print_percent},
 		{"b", print_binary},
 		{"d", print_integer},
+		{"i", print_integer},
 		{NULL, NULL},
 	};
 	if (format == NULL)
