@@ -59,8 +59,6 @@ int print_binary(va_list list)
 	number = va_arg(list, unsigned int);
 	if (number == 0)
 		return (_putchar('0'));
-	if ((int)number < 0)
-		return (0);
 	while (number > 0)
 	{
 		output[i] = (number % 2);
