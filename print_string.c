@@ -57,3 +57,41 @@ int print_percent(__attribute__((unused))va_list list)
 {
 	return (write(1, "%", 1));
 }
+
+/**
+  * print_roi13 - print encode ROI13 string
+  * @list: list of arguments
+  * Return: return the encoded string
+  */
+int print_roi13(va_list list)
+{
+	char *alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *rot = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int indexStr = 0;
+	int indexAl = 0;
+	char *str;
+
+	str = va_arg(list, char *);
+	if (str == NULL)
+		return (0);
+	while (str[indexStr] != '\0')
+	{
+		indexAl = 0;
+		while (alph[indexAl] != '\0')
+		{
+			if (str[indexStr] == alph[indexAl])
+			{
+				_putchar(rot[indexAl]);
+				break;
+			}
+			indexAl++;
+		}
+		if (alph[indexAl] == '\0')
+		{
+			_putchar(str[indexStr]);
+		}
+		indexStr++;
+	}
+	return (indexStr);
+}
+

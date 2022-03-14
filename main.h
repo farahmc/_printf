@@ -43,7 +43,7 @@ int print_binary(va_list list);
 int bytes_len(unsigned int number, int base);
 
 /* print the roi13 string */
-/* int print_roi13(va_list list); */
+int print_roi13(va_list list);
 
 /* print unsigned int */
 int print_unsigned_integer(va_list list);
