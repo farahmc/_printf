@@ -51,4 +51,7 @@ int print_unsigned_integer(va_list list);
 /* print octal numbers */
 int print_octal(va_list list);
 
+/* print hexadecimal numbers (caps) */
+int print_hex(va_list list);
+
 #endif
