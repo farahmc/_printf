@@ -63,5 +63,22 @@ int print_unsigned_integer(va_list list)
  */
 int print_octal(va_list list)
 {
-    
+    unsigned int octal_number;
+    int digit[11];
+    int i = 0, j;
+
+    octal_number = va_arg(list, unsigned int);
+    if (octal_number == 0)
+		return (_putchar('0'));
+	while (octal_number > 0)
+	{
+		digit[i] = (octal_number % 8);
+		octal_number = octal_number / 8;
+		i++;
+	}
+	for (j = i - 1; j >= 0; j--)
+	{
+		_putchar(digit[j] + '0');
+	}
+	return (i);
 }
