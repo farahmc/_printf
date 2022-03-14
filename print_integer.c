@@ -9,9 +9,6 @@ int number_length(int num)
 {
 	int i = 0;
 
-	if (num < 0)
-		i = 1;
-
 	while (num != 0)
 	{
 		num = num / 10;
@@ -77,15 +74,17 @@ int print_integer(va_list list)
 	if (n == 0)
 	{
 		_putchar('0');
+		return (1);
 	}
 	else if (n > 0)
 	{
 		print_positive_number(n);
+		return (number_length(n));
 	}
 	else
 	{
 		_putchar('-');
 		print_positive_number(n);
+		return (number_length(n) + 1);
 	}
-	return (number_length(n));
 }
