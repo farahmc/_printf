@@ -1,0 +1,52 @@
+.\" Manpage for _printf
+0;136;0c
+.TH man_3_printf "14th March 2022" "v 0.01" "_printf man page"
+
+.SH NAME
+.B _printf - function to produce output according to format.
+
+.SH SYNOPSIS
+.B #include "main.h"
+.br
+_printf(constant char *format, ...)
+
+.SH DESCRIPTION
+The function \fB_printf\fR displays output to \fBstdout\fR (standard output
+stream). The format string is composed of zero or more directives, and handles
+conversion specifiers which specifies how arguments are converted for output.
+
+.B Format of required argument
+Format is a character string composed of zero or more directives. Ordinary
+characters are copied unchanged to the output stream, and conversion
+specification which fetches 0 or more arguments. Conversion specification
+is introduced with \fB%\fR followed by one of the a character described in
+\fBCONVERSION SPECIFIER\fR.
+
+.B Return Value
+.br
+Upon success, \fB_printf\fR returns the number of characters printed, excluding
+the null byte.
+
+.SH CONVERSION SPECIFIERS
+The character \fB%\fR is followed by zero or more of the following conversion
+specifiers:
+.br
+.B c
+.br
+- Prints a single character. The int argument is converted to an unsigned char.
+.br
+.B s
+.br
+- Prints a string. The constant char * argument is expected to be a pointer to a
+string (array of chars). Characters from the array are written up to (but not
+including) a terminating null byte.
+.br
+.B d, i
+.br
+- Prints integer. The int argument is converted to signed dcimal notation.
+
+.SH SEE ALSO
+printf (3)
+
+.SH AUTHORS
+Yuan Fang, Farah McCurdy
