@@ -6,6 +6,12 @@
 #include <string.h>
 #include <unistd.h>
 
+/**
+ * struct specifier - link the specifier to the related function
+ * @spf: specifier
+ * @func: the related function
+ */
+
 typedef struct specifier
 {
 	char *spf;
@@ -25,7 +31,7 @@ int print_char(va_list list);
 int print_str(va_list list);
 
 /* print a percent */
-int print_percent();
+int print_percent(void);
 
 /* print int */
 int print_integer(va_list list);
@@ -40,6 +46,6 @@ int bytes_len(unsigned int number, int base);
 int print_roi13(va_list list);
 
 /* print int */
-// int print_unsigned_integer(va_list list);
+/* int print_unsigned_integer(va_list list); */
 
 #endif
