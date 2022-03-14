@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
   * _printf - produce output according to a format
@@ -30,6 +31,8 @@ int _printf(const char *format, ...)
 		else
 		{
 			i++;
+			if (format[i] == '\0')
+				return (count);
 			j = 0;
 			while (symbol[j].spf != NULL)
 			{
