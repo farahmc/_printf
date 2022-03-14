@@ -1,5 +1,19 @@
 #include "main.h"
 #include <stdlib.h>
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	write(1, &c, 1);
+	return (1);
+}
 
 /**
   * print_char - print characters
@@ -42,32 +56,4 @@ int print_str(va_list list)
 int print_percent(__attribute__((unused))va_list list)
 {
 	return (write(1, "%", 1));
-}
-
-/**
- * print_binary - print binary numbers
- * @list: list of arguments
- * Return: numbers of binary printed
- */
-int print_binary(va_list list)
-{
-	unsigned int number;
-	int j;
-	int i = 0;
-	int output[32];
-
-	number = va_arg(list, unsigned int);
-	if (number == 0)
-		return (_putchar('0'));
-	while (number > 0)
-	{
-		output[i] = (number % 2);
-		number = number / 2;
-		i++;
-	}
-	for (j = i - 1; j >= 0; j--)
-	{
-		_putchar(output[j] + '0');
-	}
-	return (i);
 }

@@ -65,7 +65,7 @@ void print_positive_number(int pn)
 /**
   * print_integer - print an integer using putchar
   * @list: parameter from list
-  * Return: return null
+  * Return: length
   */
 int print_integer(va_list list)
 {

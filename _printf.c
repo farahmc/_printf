@@ -12,12 +12,10 @@ int _printf(const char *format, ...)
 	int i, j, count = 0;
 	va_list vlist;
 	t_specifier symbol[] = {
-		{"c", print_char},
-		{"s", print_str},
-		{"%", print_percent},
-		{"b", print_binary},
-		{"d", print_integer},
-		{"i", print_integer},
+		{"c", print_char}, {"s", print_str},
+		{"%", print_percent}, {"b", print_binary},
+		{"d", print_integer}, {"i", print_integer},
+		{"u", print_unsigned_integer},
 		{NULL, NULL},
 	};
 	if (format == NULL)
