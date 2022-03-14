@@ -54,7 +54,7 @@ int print_binary(va_list list)
 	unsigned int number;
 	int j;
 	int i = 0;
-	int output[64];
+	int output[32];
 
 	number = va_arg(list, unsigned int);
 	if (number == 0)
@@ -65,7 +65,6 @@ int print_binary(va_list list)
 		number = number / 2;
 		i++;
 	}
-
 	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar(output[j] + '0');
