@@ -72,7 +72,7 @@ int print_binary(va_list list)
 	unsigned int number;
 	int length, j;
 	int i = 0;
-	char *str;
+	int output[32];
 
 	number = va_arg(list, unsigned int);
 	if (number == 0)
@@ -80,25 +80,16 @@ int print_binary(va_list list)
 	if ((int)number < 0)
 		return (0);
 	length = bytes_len(number, 2);
-	str = malloc(sizeof(char) * length + 1);
-	if (str == NULL)
-	{
-		return (0);
-	}
 	while (number > 0)
 	{
-		if (number % 2 == 0)
-			str[i] = '0';
-		else
-			str[i] = '1';
+		output[i] = (number % 2);
 		number = number / 2;
 		i++;
 	}
-	str[i] = '\0';
-	for (j = length; j >= 0; j--)
+
+	for (j = length - 1; j >= 0; j--)
 	{
-		_putchar(str[j]);
+		_putchar(output[j] + '0');
 	}
-	free(str);
 	return (length);
 }
