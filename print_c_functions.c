@@ -80,6 +80,8 @@ int print_binary(va_list list)
 	number = va_arg(list, unsigned int);
 	if (number == 0)
 		return (_putchar('0'));
+	if ((int)number < 0)
+		return (-1);
 	length = bytes_len(number, 2);
 	str = malloc(sizeof(char) * length + 1);
 	if (str == NULL)
