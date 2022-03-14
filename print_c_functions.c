@@ -26,7 +26,7 @@ int print_str(va_list list)
 	char *str;
 
 	str = va_arg(list, char *);
-	if (str == NULL || *str == '\0')
+	if (str == NULL)
 		str = "(null)";
 	while (str[i] != '\0')
 	{
@@ -38,7 +38,7 @@ int print_str(va_list list)
 
 /**
  * print_percent - print percent symbol
- *
+ * @list: list of arguments
  * Return: numbers of percent printed
  */
 int print_percent(__attribute__((unused))va_list list)
