@@ -45,24 +45,6 @@ int print_percent(__attribute__((unused))va_list list)
 }
 
 /**
- * bytes_len - get the bytes length of the given number with given base
- * @number: given number
- * @base: base
- * Return: length
- */
-int bytes_len(unsigned int number, int base)
-{
-	unsigned int i = 0;
-
-	while (number > 0)
-	{
-		number = number / base;
-		i++;
-	}
-	return (i);
-}
-
-/**
  * print_binary - print binary numbers
  * @list: list of arguments
  * Return: numbers of binary printed
@@ -70,16 +52,15 @@ int bytes_len(unsigned int number, int base)
 int print_binary(va_list list)
 {
 	unsigned int number;
-	int length, j;
+	int j;
 	int i = 0;
-	int output[32];
+	int output[64];
 
 	number = va_arg(list, unsigned int);
 	if (number == 0)
 		return (_putchar('0'));
 	if ((int)number < 0)
 		return (0);
-	length = bytes_len(number, 2);
 	while (number > 0)
 	{
 		output[i] = (number % 2);
@@ -87,9 +68,9 @@ int print_binary(va_list list)
 		i++;
 	}
 
-	for (j = length - 1; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar(output[j] + '0');
 	}
-	return (length);
+	return (i);
 }
