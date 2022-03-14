@@ -54,4 +54,7 @@ int print_octal(va_list list);
 /* print hexadecimal numbers (caps) */
 int print_hex(va_list list);
 
+/* print hexadecimal numbers (lowercase) */
+int print_hex_lower(va_list list);
+
 #endif
