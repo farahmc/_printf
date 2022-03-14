@@ -2,13 +2,14 @@
 #include <stdlib.h>
 
 /**
- * print_binary - print binary numbers
+ * print_number_convert - function to conver integer to binary/unsigned int/octal
  * @list: list of arguments
- * Return: numbers of binary printed
+ * @base: base
+ * Return: numbers of digits printed
  */
-int print_binary(va_list list)
+int print_number_convert(va_list list, int base)
 {
-	unsigned int number;
+    unsigned int number;
 	int j;
 	int i = 0;
 	int output[32];
@@ -18,8 +19,8 @@ int print_binary(va_list list)
 		return (_putchar('0'));
 	while (number > 0)
 	{
-		output[i] = (number % 2);
-		number = number / 2;
+		output[i] = (number % base);
+		number = number / base;
 		i++;
 	}
 	for (j = i - 1; j >= 0; j--)
@@ -30,30 +31,23 @@ int print_binary(va_list list)
 }
 
 /**
+ * print_binary - print binary numbers
+ * @list: list of arguments
+ * Return: numbers of binary printed
+ */
+int print_binary(va_list list)
+{
+	return (print_number_convert(list, 2));
+}
+
+/**
  * print_unsigned_integer - print unsigned integer
  * @list: list of arguments
  * Return: numbers of digits printed
  */
 int print_unsigned_integer(va_list list)
 {
-	unsigned int unsigned_number;
-	int digit[10];
-	int i = 0, j;
-
-	unsigned_number = va_arg(list, unsigned int);
-	if (unsigned_number == 0)
-		return (_putchar('0'));
-	while (unsigned_number > 0)
-	{
-		digit[i] = (unsigned_number % 10);
-		unsigned_number = unsigned_number / 10;
-		i++;
-	}
-	for (j = i - 1; j >= 0; j--)
-	{
-		_putchar(digit[j] + '0');
-	}
-	return (i);
+	return (print_number_convert(list, 10));
 }
 
 /**
@@ -63,22 +57,5 @@ int print_unsigned_integer(va_list list)
  */
 int print_octal(va_list list)
 {
-    unsigned int octal_number;
-    int digit[11];
-    int i = 0, j;
-
-    octal_number = va_arg(list, unsigned int);
-    if (octal_number == 0)
-		return (_putchar('0'));
-	while (octal_number > 0)
-	{
-		digit[i] = (octal_number % 8);
-		octal_number = octal_number / 8;
-		i++;
-	}
-	for (j = i - 1; j >= 0; j--)
-	{
-		_putchar(digit[j] + '0');
-	}
-	return (i);
+    return (print_number_convert(list, 8));
 }
