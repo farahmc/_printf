@@ -63,8 +63,8 @@ void print_positive_number(int pn)
 }
 
 /**
-  * print_number - print an integer using putchar
-  * @n: number to check
+  * print_integer - print an integer using putchar
+  * @list: parameter from list
   * Return: return null
   */
 int print_integer(va_list list)
