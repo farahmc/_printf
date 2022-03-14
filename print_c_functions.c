@@ -41,7 +41,7 @@ int print_str(va_list list)
  *
  * Return: numbers of percent printed
  */
-int print_percent(void)
+int print_percent(__attribute__((unused))va_list list)
 {
 	_putchar('%');
 	return (1);

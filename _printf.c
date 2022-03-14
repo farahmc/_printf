@@ -18,8 +18,8 @@ int _printf(const char *format, ...)
 		{"%", print_percent},
 		{"b", print_binary},
 		{"d", print_integer},
-		{"R", print_roi13},
 		/*
+		* {"R", print_roi13},
 		* {"u", print_unsigned_integer},
 		* comment out below 3 lines to test the function of print_char only
 		* {"i", print_int},

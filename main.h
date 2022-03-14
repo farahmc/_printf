@@ -31,7 +31,7 @@ int print_char(va_list list);
 int print_str(va_list list);
 
 /* print a percent */
-int print_percent(void);
+int print_percent(va_list list);
 
 /* print int */
 int print_integer(va_list list);
@@ -43,7 +43,7 @@ int print_binary(va_list list);
 int bytes_len(unsigned int number, int base);
 
 /* print the roi13 string */
-int print_roi13(va_list list);
+/* int print_roi13(va_list list); */
 
 /* print int */
 /* int print_unsigned_integer(va_list list); */
