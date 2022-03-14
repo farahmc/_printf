@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 /**
- * print_number_convert - function to conver integer to binary/unsigned int/octal
+ * print_number_convert - conver integer to binary/unsigned int/octal
  * @list: list of arguments
  * @base: base
  * Return: numbers of digits printed
  */
 int print_number_convert(va_list list, int base)
 {
-    unsigned int number;
+	unsigned int number;
 	int j;
 	int i = 0;
 	int output[32];
@@ -57,5 +57,5 @@ int print_unsigned_integer(va_list list)
  */
 int print_octal(va_list list)
 {
-    return (print_number_convert(list, 8));
+	return (print_number_convert(list, 8));
 }
