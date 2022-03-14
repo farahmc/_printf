@@ -101,7 +101,7 @@ int print_hex(va_list list)
 {
 	unsigned int num, remainder;
 	int i, j = 0;
-	char hexdec[8];
+	char hexdec[50];
 
 	num = va_arg(list, unsigned int);
 
@@ -119,15 +119,14 @@ int print_hex(va_list list)
 			j++;
 		}
 		num = num / 16;
-		j++;
 	}
 
 	/* print in reverse */
-	i = j - 1;
+	i = j;
 	while (i >= 0)
 	{
 		_putchar(hexdec[i]);
 		i--;
 	}
-	return (j);
+	return (number_length(hexdec[i]));
 }
