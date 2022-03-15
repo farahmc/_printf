@@ -45,6 +45,10 @@ including) a terminating null byte.
 .br
 - Prints integer. The int argument is converted to signed decimal notation.
 .br
+.B b
+.br
+- Prints an unsigned integer. The unsigned int argument is converted to binary.
+.br
 .B o, u, x, X
 .br
 - Prints an unsigned integer. The unsigned int argument is converted to unsigned
