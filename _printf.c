@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 		{"d", print_integer}, {"i", print_integer},
 		{"u", print_unsigned_integer}, {"o", print_octal},
 		{"X", print_hex_upper}, {"x", print_hex_lower},
-		{"S", print_S}, {"R", print_roi13},
+		{"S", print_S}, {"R", print_roi13}, {"r", print_rev_string},
 		{NULL, NULL},
 	};
 	if (format == NULL)
@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 		else
 		{
 			if (format[i + 1] == '\0')
-				return (count + 1);
+				return (count);
 			j = 0;
 			while (symbol[j].spf != NULL)
 			{

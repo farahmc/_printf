@@ -66,4 +66,10 @@ int print_hex(va_list list, int islower);
 /* print Non printable characters with \x and hex */
 int print_S(va_list list);
 
+/* print reverse string */
+int print_rev_string(va_list list);
+
+/* get the string length */
+int _strlen(char *s);
+
 #endif
