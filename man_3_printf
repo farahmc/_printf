@@ -16,7 +16,7 @@ stream). The format string is composed of zero or more directives, and handles
 conversion specifiers which specifies how arguments are converted for output.
 
 .B Format of required argument
-Format is a character string composed of zero or more directives. Ordinary
+.br Format is a character string composed of zero or more directives. Ordinary
 characters are copied unchanged to the output stream, and conversion
 specification which fetches 0 or more arguments. Conversion specification
 is introduced with \fB%\fR followed by one of the a character described in
@@ -32,22 +32,26 @@ The character \fB%\fR is followed by zero or more of the following conversion
 specifiers:
 .br
 .B c
-.br
-- Prints a single character. The int argument is converted to an unsigned char.
+.br - Prints a single character. The int argument is converted to an unsigned
+char.
 .br
 .B s
 .br
-- Prints a string. The constant char * argument is expected to be a pointer to a
-string (array of chars). Characters from the array are written up to (but not
-including) a terminating null byte.
+- Prints a string as displayed. The constant char * argument is expected to be a
+pointer to a string (array of chars). Characters from the array are written up
+to (but not including) a terminating null byte.
 .br
 .B S
 .br
 - Prints a string with non printable characters converted to hexadecimal.
+.br
 .B R
 .br
 - Prints a string converted to ROT13 encryption.
 .br
+.B r
+.br
+- Prints a string in reverse.
 .B d, i
 .br
 - Prints integer. The int argument is converted to signed decimal notation.
