@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 		{"d", print_integer}, {"i", print_integer},
 		{"u", print_unsigned_integer}, {"o", print_octal},
 		{"X", print_hex_upper}, {"x", print_hex_lower},
-		{"S", print_S}, {"R", print_roi13},
+		{"R", print_roi13},
 		{NULL, NULL},
 	};
 	if (format == NULL)
