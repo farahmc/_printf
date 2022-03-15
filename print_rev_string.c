@@ -28,14 +28,13 @@ int print_rev_string(va_list list)
 	int i, length;
 
 	str = va_arg(list, char *);
-	if (str == NULL)
-		str = "(null)";
+	if (str == NULL || str == '\0')
+		return (0);
 	length = _strlen(str);
 	for (i = length; i >= 0; i--)
 	{
 		_putchar(str[i]);
 	}
-	_putchar('\0');
 
 	return (length);
 }
