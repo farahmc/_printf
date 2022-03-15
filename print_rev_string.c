@@ -31,7 +31,7 @@ int print_rev_string(va_list list)
 	if (str == NULL || *str == '\0')
 		return (0);
 	length = _strlen(str);
-	for (i = length; i >= 0; i--)
+	for (i = length - 1; i >= 0; i--)
 	{
 		_putchar(str[i]);
 	}
