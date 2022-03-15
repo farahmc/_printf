@@ -63,4 +63,7 @@ int print_hex_lower(va_list list);
 /* print hexadecimal numbers lower or upper */
 int print_hex(va_list list, int islower);
 
+/* print Non printable characters with \x and hex */
+int print_S(va_list list);
+
 #endif
