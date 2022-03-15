@@ -1,7 +1,8 @@
 # README for _printf :page_with_curl:
 
 A C program reproducing the printf function (formatted output conversion) as
-part of the Holberton School curriculum for Low-Level Programming.
+part of the [Holberton School](https://holbertonschool.com.au/) Foundations
+curriculum for Low-Level Programming.
 
 ## Usage :clapper:
 To use the `_printf` function, compile all .c files in the repository and
