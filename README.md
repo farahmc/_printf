@@ -7,12 +7,13 @@ part of the Holberton School curriculum for Low-Level Programming.
 To use the `_printf` function, compile all .c files in the repository and
 include the header `main.h`.
 
-###Compilation
+### Compilation
 All files are compiled with gcc using the following flags:
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c`
 
-###Example
-``` #include "main.h"
+### Example
+```
+#include "main.h"
 
 int main(void)
 {
@@ -20,19 +21,22 @@ int main(void)
 	_printf("My cat is %d years old.\n", n);
 
 	return (0);
-}```
+}
+```
 
 Output:
-```$ ./cat
+```
+$ ./cat
 My cat is 2 years old.
-$```
+$
+```
 
-###Coding Style
+### Coding Style
 All files are written in C programming language and follows the
 [Betty coding style](https://github.com/holbertonschool/Betty/wiki).
 
-##Description
-###File Description
+## Description
+### File Description
 - **_printf.c**: contains the _printf function, which uses a struct to handle
 conversion specifiers
 - **main.h**: header file containing all prototypes
