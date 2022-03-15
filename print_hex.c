@@ -75,7 +75,7 @@ int print_hex_lower(va_list list)
 	}
 
 	/* print in reverse */
-	i = j;
+	i = j - 1;
 	while (i >= 0)
 	{
 		_putchar(hexdec[i]);
