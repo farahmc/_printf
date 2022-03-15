@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 		else
 		{
 			if (format[i + 1] == '\0')
-				return (count);
+				return (count + 1);
 			j = 0;
 			while (symbol[j].spf != NULL)
 			{
