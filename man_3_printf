@@ -54,6 +54,7 @@ or >=127) converted to hexadecimal.
 .B r
 .br
 - Prints a string as \fBs\fR, but in reverse.
+.br
 .B d, i
 .br
 - Prints integer. The int argument is converted to signed decimal notation.
