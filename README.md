@@ -67,8 +67,15 @@ will apply the conversion and display as follows:
 - `i`: integer
 - `c`*: character
 - `s`: string (constant char *)
+- `S`: string with non printable characters converted to hexadecimal
+- `R`: string converted to ROT13 encryption
+- `r`: reverses the entered string
 - `%`: no conversion, single % will display
 - `o`: unsigned integer
 - `b`: binary (unsigned int converted to binary)
 - `o`: octal (unsigned int converted to octal)
 - `x` or `X`: hexadecimal (unsigned int converted to hexadecimal)
+
+## Return Value
+Upon success,`_printf` returns the number of characters printed, excluding
+the null byte. Upon error, the function returns `-1`.
