@@ -29,21 +29,19 @@ int _printf(const char *format, ...)
 			count += _putchar(format[i]);
 		else
 		{
-			i++;
-			if (format[i] == '\0')
+			if (format[i + 1] == '\0')
 				return (count);
 			j = 0;
 			while (symbol[j].spf != NULL)
 			{
-				if (*(symbol[j].spf) == format[i])
+				if (*(symbol[j].spf) == format[i + 1])
 				{
+					i++;
 					count += symbol[j].func(vlist);
 					break;
 				}
 				j++;
 			}
-			if (symbol[j].spf == NULL)
-				count += _putchar(format[i]);
 		}
 	}
 	va_end(vlist);
