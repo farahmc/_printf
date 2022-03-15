@@ -67,7 +67,7 @@ will apply the conversion and display as follows:
 - `d`: decimal number
 - `i`: integer
 - `c`*: character
-- `s`: string (constant char *)
+- `s`: string (constant char *) as displayed
 - `S`: string with non printable characters converted to hexadecimal
 - `R`: string converted to ROT13 encryption
 - `r`: reverses the entered string
