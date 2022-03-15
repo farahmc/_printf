@@ -41,6 +41,13 @@ specifiers:
 string (array of chars). Characters from the array are written up to (but not
 including) a terminating null byte.
 .br
+.B S
+.br
+- Prints a string with non printable characters converted to hexadecimal.
+.B R
+.br
+- Prints a string converted to ROT13 encryption.
+.br
 .B d, i
 .br
 - Prints integer. The int argument is converted to signed decimal notation.
