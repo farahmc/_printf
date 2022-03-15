@@ -76,6 +76,10 @@ will apply the conversion and display as follows:
 - `o`: octal (unsigned int converted to octal)
 - `x` or `X`: hexadecimal (unsigned int converted to hexadecimal)
 
-## Return Value
+### Return Value
 Upon success,`_printf` returns the number of characters printed, excluding
 the null byte. Upon error, the function returns `-1`.
+
+##Authors
+- Yuan Fang [[yuan-fang-228](https://github.com/yuan-fang-228)]
+- Farah McCurdy [[farahmc](https://github.com/farahmc)]
