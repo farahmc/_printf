@@ -14,7 +14,7 @@ int print_hex(va_list list)
 {
 	unsigned int num, remainder;
 	int i, j = 0;
-	char hexdec[50];
+	char hexdec[8];
 
 	num = va_arg(list, unsigned int);
 
@@ -56,7 +56,7 @@ int print_hex_lower(va_list list)
 {
 	unsigned int num, remainder;
 	int i, j = 0;
-	char hexdec[50];
+	char hexdec[8];
 
 	num = va_arg(list, unsigned int);
 
