@@ -16,7 +16,8 @@ int _printf(const char *format, ...)
 		{"%", print_percent}, {"b", print_binary},
 		{"d", print_integer}, {"i", print_integer},
 		{"u", print_unsigned_integer}, {"o", print_octal},
-		{"R", print_roi13}, {"X", print_hex}, {"x", print_hex_lower},
+		{"X", print_hex_upper}, {"x", print_hex_lower},
+		{"S", print_S}, {"R", print_roi13},
 		{NULL, NULL},
 	};
 	if (format == NULL)
