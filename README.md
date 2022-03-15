@@ -17,7 +17,7 @@ All files are compiled with gcc using the following flags:
 
 int main(void)
 {
-	int n = 2;
+	int n = 9;
 	_printf("My cat is %d years old.\n", n);
 
 	return (0);
@@ -27,7 +27,7 @@ int main(void)
 Output:
 ```
 $ ./cat
-My cat is 2 years old.
+My cat is 9 years old.
 $
 ```
 
@@ -49,8 +49,14 @@ characters converted to hexadecimal
 - **print_integer.c**: contains the function to display integers
 - **print_number.c**: contains functions to display unsigned int, binary and
 octal numbers
+- **print_string.c**: contains functions to display single characters,
+strings as displayed and strings converted to rot13 encryption.
 
+### Function Description
 Our `_printf` function writes output to standard output. The format string
 is composed of zero or more directives, and handles conversion specifiers
-which specifies how arguments (accessed through `stdarg`)  are converted for
+which specifies how arguments (accessed through `va_arg`)  are converted for
 output.
+
+**Prototype**
+`int _printf(const char *format, ...);`
