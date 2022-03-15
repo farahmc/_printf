@@ -40,9 +40,15 @@ All files are written in C programming language and follows the
 - **_printf.c**: contains the _printf function, which uses a struct to handle
 conversion specifiers
 - **main.h**: header file containing all prototypes
--**man_3_print**: manual for the function, accessed via man ./man_3_print
--**print_hex**: contains the function to convert unsigned int to hexadecimal
+- **man_3_print**: manual for the **_printf** function, accessed via
+man ./man_3_print
+- **print_S_hex.c**: contains the function to print a string with non printable
+characters converted to hexadecimal
+- **print_hex.c**: contains the function to convert unsigned int to hexadecimal
 (uppercase and lowercase)
+- **print_integer.c**: contains the function to display integers
+- **print_number.c**: contains functions to display unsigned int, binary and
+octal numbers
 
 Our `_printf` function writes output to standard output. The format string
 is composed of zero or more directives, and handles conversion specifiers
