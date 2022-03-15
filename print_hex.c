@@ -39,7 +39,7 @@ int print_hex(va_list list)
 		_putchar(hexdec[i]);
 		i--;
 	}
-	return (number_length(hexdec[i]));
+	return (j);
 }
 
 /**
@@ -81,5 +81,5 @@ int print_hex_lower(va_list list)
 		_putchar(hexdec[i]);
 		i--;
 	}
-	return (number_length(hexdec[i]));
+	return (j);
 }
