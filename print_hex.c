@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_hex- convert a given unsigned int to hexadecimal (caps)
@@ -39,7 +41,7 @@ int print_hex(va_list list)
 		_putchar(hexdec[i]);
 		i--;
 	}
-	return (number_length(hexdec[i]));
+	return (j);
 }
 
 /**
@@ -81,5 +83,5 @@ int print_hex_lower(va_list list)
 		_putchar(hexdec[i]);
 		i--;
 	}
-	return (number_length(hexdec[i]));
+	return (j);
 }
