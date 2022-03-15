@@ -16,7 +16,8 @@ stream). The format string is composed of zero or more directives, and handles
 conversion specifiers which specifies how arguments are converted for output.
 
 .B Format of required argument
-.br Format is a character string composed of zero or more directives. Ordinary
+.br
+Format is a character string composed of zero or more directives. Ordinary
 characters are copied unchanged to the output stream, and conversion
 specification which fetches 0 or more arguments. Conversion specification
 is introduced with \fB%\fR followed by one of the a character described in
@@ -25,7 +26,7 @@ is introduced with \fB%\fR followed by one of the a character described in
 .B Return Value
 .br
 Upon success, \fB_printf\fR returns the number of characters printed, excluding
-the null byte.
+the null byte. Upon failure, \fB_printf\fR returns \fB-1\fR.
 
 .SH CONVERSION SPECIFIERS
 The character \fB%\fR is followed by zero or more of the following conversion
