@@ -35,6 +35,7 @@ int print_rev_string(va_list list)
 	{
 		_putchar(str[i]);
 	}
+	_putchar('\0');
 
 	return (length);
 }
