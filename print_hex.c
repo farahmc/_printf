@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_hex- convert a given unsigned int to hexadecimal (caps)
  * @list: parameter from va_list
@@ -61,7 +63,7 @@ int print_hex_lower(va_list list)
 		remainder = num % 16;
 		if (remainder < 10)
 		{
-			hexdec[j] = 48 + remainder + 32;
+			hexdec[j] = 48 + remainder;
 			j++;
 		}
 		else
