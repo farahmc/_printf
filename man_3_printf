@@ -37,21 +37,22 @@ char.
 .br
 .B s
 .br
-- Prints a string as displayed. The constant char * argument is expected to be a
+- Prints a string. The constant char * argument is expected to be a
 pointer to a string (array of chars). Characters from the array are written up
 to (but not including) a terminating null byte.
 .br
 .B S
 .br
-- Prints a string with non printable characters converted to hexadecimal.
+- Prints a string as \fBs\fR, with non printable characters (ASCII value < 32
+or >=127) converted to hexadecimal.
 .br
 .B R
 .br
-- Prints a string converted to ROT13 encryption.
+- Prints a string as \fBs\fR, but converted to ROT13 encryption.
 .br
 .B r
 .br
-- Prints a string in reverse.
+- Prints a string as \fBs\fR, but in reverse.
 .B d, i
 .br
 - Prints integer. The int argument is converted to signed decimal notation.
