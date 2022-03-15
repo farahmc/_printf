@@ -38,8 +38,8 @@ All files are written in C programming language and follows the
 
 ## Description :open_book:
 ### File Description
-- **_printf.c**: contains the _printf function, which uses a struct to handle
-conversion specifiers
+- **_printf.c**: contains the _printf function, which uses a struct array
+containing pointers to functions to handle conversion specifiers
 - **main.h**: header file containing all prototypes
 - **man_3_print**: manual for the **_printf** function, accessed via
 `man ./man_3_print`
