@@ -1,9 +1,9 @@
-# README for _printf
+# README for _printf :page_with_curl:
 
 A C program reproducing the printf function (formatted output conversion) as
 part of the Holberton School curriculum for Low-Level Programming.
 
-## Usage
+## Usage :clapper:
 To use the `_printf` function, compile all .c files in the repository and
 include the header `main.h`.
 
@@ -35,7 +35,7 @@ $
 All files are written in C programming language and follows the
 [Betty coding style](https://github.com/holbertonschool/Betty/wiki).
 
-## Description
+## Description :open_book:
 ### File Description
 - **_printf.c**: contains the _printf function, which uses a struct to handle
 conversion specifiers
@@ -80,10 +80,10 @@ will apply the conversion and display as follows:
 Upon success,`_printf` returns the number of characters printed, excluding
 the null byte. Upon error, the function returns `-1`.
 
-## Authors
+## Authors :pencil2:
 - Yuan Fang [[yuan-fang-228](https://github.com/yuan-fang-228)]
 - Farah McCurdy [[farahmc](https://github.com/farahmc)]
 
-## Acknowledgements
+## Acknowledgements :trophy:
 This README borrowed from the `printf` standard library function manual
 [printf](https://linux.die.net/man/3/printf).
