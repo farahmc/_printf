@@ -41,7 +41,7 @@ All files are written in C programming language and follows the
 conversion specifiers
 - **main.h**: header file containing all prototypes
 - **man_3_print**: manual for the **_printf** function, accessed via
-man ./man_3_print
+`man ./man_3_print`
 - **print_S_hex.c**: contains the function to print a string with non printable
 characters converted to hexadecimal
 - **print_hex.c**: contains the function to convert unsigned int to hexadecimal
@@ -49,6 +49,7 @@ characters converted to hexadecimal
 - **print_integer.c**: contains the function to display integers
 - **print_number.c**: contains functions to display unsigned int, binary and
 octal numbers
+- **print_rev_string.c**: contains the function to reverse a string
 - **print_string.c**: contains functions to display single characters,
 strings as displayed and strings converted to rot13 encryption.
 
