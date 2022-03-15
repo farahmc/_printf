@@ -80,6 +80,10 @@ will apply the conversion and display as follows:
 Upon success,`_printf` returns the number of characters printed, excluding
 the null byte. Upon error, the function returns `-1`.
 
-##Authors
+## Authors
 - Yuan Fang [[yuan-fang-228](https://github.com/yuan-fang-228)]
 - Farah McCurdy [[farahmc](https://github.com/farahmc)]
+
+## Acknowledgements
+This README borrowed from the `printf` standard library function manual
+[printf](https://linux.die.net/man/3/printf).
