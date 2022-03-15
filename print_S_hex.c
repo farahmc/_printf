@@ -11,9 +11,9 @@ int print_2_hex(unsigned int num)
 {
 	unsigned int remainder;
 	int j = 0;
-	char hexdec[8];
+	char hexdec[2];
 
-	while (num > 0)
+	while (num > 0 || j < 2)
 	{
 		remainder = num % 16;
 		if (remainder < 10)
