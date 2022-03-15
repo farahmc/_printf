@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_hex- convert a given unsigned int to hexadecimal (caps)
