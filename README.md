@@ -58,5 +58,17 @@ is composed of zero or more directives, and handles conversion specifiers
 which specifies how arguments (accessed through `va_arg`)  are converted for
 output.
 
-**Prototype**
-`int _printf(const char *format, ...);`
+**Prototype:** `int _printf(const char *format, ...);`
+
+### Conversion Specifiers
+The character `%` when followed by one of the following conversion specifiers
+will apply the conversion and display as follows:
+- `d`: decimal number
+- `i`: integer
+- `c`*: character
+- `s`: string (constant char *)
+- `%`: no conversion, single % will display
+- `o`: unsigned integer
+- `b`: binary (unsigned int converted to binary)
+- `o`: octal (unsigned int converted to octal)
+- `x` or `X`: hexadecimal (unsigned int converted to hexadecimal)
