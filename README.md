@@ -27,7 +27,7 @@ int main(void)
 
 Output:
 ```
-$ ./cat
+$ ./a.out
 My cat is 9 years old.
 $
 ```
